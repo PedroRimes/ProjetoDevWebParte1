@@ -1,7 +1,10 @@
 <!DOCTYPE html!>
 <html lang="pt-br">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, schrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
     <title>Formulario de Compra</title>
 </head>
 <body>
@@ -17,9 +20,19 @@
                 <input type="date" id="data_compra">
                 <label for="valor_compra">Valor do produto: </label>
                 <input type="number" id="val_comp">
+                <label for="id_fornecedor">Id do fornecedor: </label>
+                <ul>
+                    <option>irineu</option>
+                    <option>jubileu</option>
+                </ul>
                 <input type="submit" value="Submit">
+                
             </form>
         </div>
     </main>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
 </body>
 </html>
