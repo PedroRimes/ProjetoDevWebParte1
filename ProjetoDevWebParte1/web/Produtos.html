@@ -8,37 +8,76 @@
     <title>Formulário Produtos</title>
 </head>
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">CompraVenda</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Produtos.html">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Vendas.html">Vendas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Funcionarios.html">Funcionarios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Fornecedores.html">Fornecedores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Compras.html">Compras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Clientes.html">Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Categoria.html">Categoria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <main>
         <div class="container pt 5">
             <h1>Produtos</h1>
             <div id="container_form">
-                <form action="processaForm">
+                <form method="POST" action="processaForm">
                     <div class="form-group">
-                        <label for="exampleInputText">Nome produto</label>
-                        <input type="text" class="form-control" id="exampleInputText" aria-describedby="TextHelp" placeholder="Enter product name">
+                        <label for="exampleInputText">Nome produto:</label>
+                        <input type="text" class="form-control" id="exampleInputText" aria-describedby="TextHelp" placeholder="Escreva o nome">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputText">Descrição</label>
-                        <input type="text" class="form-control" id="exampleInputText" aria-describedby="TextHelp" placeholder="Enter descrição">
+                        <label for="exampleInputText">Descrição:</label>
+                        <input type="text" class="form-control" id="exampleInputText" aria-describedby="TextHelp" placeholder="Escreva a descrição">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPrice">Preço de compra</label>
-                        <input type="number" class="form-control" id="exampleInputRole" aria-describedby="priceHelp" placeholder="Enter preço de compra">
+                        <label for="exampleInputPrice">Preço de compra:</label>
+                        <input type="number" class="form-control" id="exampleInputRole" aria-describedby="priceHelp" placeholder="Digite o preço de compra">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPrice">Preço de venda</label>
-                        <input type="number" class="form-control" id="exampleInputRole" aria-describedby="priceHelp" placeholder="Enter preço de venda">
+                        <label for="exampleInputPrice">Preço de venda:</label>
+                        <input type="number" class="form-control" id="exampleInputRole" aria-describedby="priceHelp" placeholder="Digite o preço de venda">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputQuantidade">Quantidade</label>
-                        <input type="number" class="form-control" id="exampleInputRole" aria-describedby="numberHelp" placeholder="Enter quantidade">
+                        <label for="exampleInputQuantidade">Quantidade:</label>
+                        <input type="number" class="form-control" id="exampleInputRole" aria-describedby="numberHelp" placeholder="Digite a quantidade">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputRole">Liberado Venda</label>
-                        <input type="text" class="form-control" id="exampleInputRole" aria-describedby="textHelp" placeholder="Enter role">
+                        <label for="exampleInputRole">Liberado Venda:</label>
+                        <input type="text" class="form-control" id="exampleInputRole" aria-describedby="textHelp" placeholder="Digite 'S' para sim e 'N' para não">
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlSelect1">Example select</label>
+                        <label for="exampleFormControlSelect1">ID da Categoria:</label>
                         <select class="form-control" id="exampleFormControlSelect1">
                             <option>1</option>
                             <option>2</option>
@@ -47,13 +86,6 @@
                             <option>5</option>
                         </select>
                     </div>
-                    <datalist id="id_categoria">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </datalist>
                     <button type="button" class="btn btn-success">Enviar</button>
                 </form>
             </div>

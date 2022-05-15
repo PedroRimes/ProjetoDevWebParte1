@@ -2,54 +2,101 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
     <title>Formulário Vendas</title>
 </head>
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">CompraVenda</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Produtos.html">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Vendas.html">Vendas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Funcionarios.html">Funcionarios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Fornecedores.html">Fornecedores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Compras.html">Compras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Clientes.html">Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Categoria.html">Categoria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <main>
         <div class="container pt 5">
             <h1>Vendas</h1>
-            <form action="processaForm">
-                <div class="form-row">
-
-                </div>
-                <label for="Quantidade_venda">Quantidade_venda</label>
-                <input type="number" id="quantidade_venda" >
-                <label for="Data_venda">Data_venda</label>
-                <input type="date" id="data_venda" >
-                <label for="Valor_venda">Valor_venda</label>
-                <input type="number" id="valor_venda" >
-                <label for="id_cliente">Id do cliente: </label>
-                <input list="id_cliente">
-                <datalist id="id_cliente">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                  </datalist>
-                <label for="id_produto">Id do produto: </label>
-                <input list="id_produto">
-                <datalist id="id_produto">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </datalist>
-                <label for="id_vendedor">Id do vendedor: </label>
-                <input list="id_vendedor">
-                <datalist id="id_vendedor">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                  </datalist>
-                <input type="submit" value="Submit">
-            </form>
+            <div id="container_form">
+                <form method="POST" action="processaForm">
+                    <div class="form-group">
+                        <label for="exampleInputNumber">Quantidade de vendas:</label>
+                        <input type="number" class="form-control" id="exampleInputNumber" aria-describedby="NumberHelp" placeholder="Ex: 1,2,3">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputDate">Data da venda :</label>
+                        <input type="date" class="form-control" id="exampleInputDate" aria-describedby="DateHelp" placeholder="Ex: 11/05/1999">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputNumber">Valor da venda:</label>
+                        <input type="number" class="form-control" id="exampleInputNumber" aria-describedby="NumberHelp" placeholder="Ex: R$ 10,00">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">ID do Cliente:</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">ID do Produto:</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">ID do Vendedor:</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <button type="button" class="btn btn-success">Enviar</button>
+                </form>
+            </div>
         </div>
     </main>
     <script src="jquery-3.4.1.min.js"></script>

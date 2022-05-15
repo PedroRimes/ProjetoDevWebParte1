@@ -1,34 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
     <title>Formulário de Funcionários</title>
 </head>
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">CompraVenda</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Produtos.html">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Vendas.html">Vendas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Funcionarios.html">Funcionarios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Fornecedores.html">Fornecedores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Compras.html">Compras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Clientes.html">Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Categoria.html">Categoria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <main>
-        <h1>Funcionarios</h1>
-        <form action="processaForm">
-            <div class="form-group">
-                <label for="exampleInputText">Name</label>
-                <input type="text" class="form-control" id="exampleInputText" aria-describedby="TextHelp" placeholder="Enter name">
-            </div>
-            <div class="form-group">
-                <label for="exampleInputNumber">Cpf</label>
-                <input type="number" class="form-control" id="exampleInputNumber" aria-describedby="numberHelp" placeholder="Enter Cpf">
-            </div>
-            <div class="form-group">
-                <label for="exampleInputPassword">Senha</label>
-                <input type="password" class="form-control" id="exampleInputPassword" aria-describedby="passwordHelp" placeholder="Enter password">
-            </div>
-            <div class="form-group">
-                <label for="exampleInputRole">Papel</label>
-                <input type="number" class="form-control" id="exampleInputRole" aria-describedby="roleHelp" placeholder="Enter role">
-            </div>
-            <button type="button" class="btn btn-success">Enviar</button>
-        </form>
+        <div class="container pt 5">
+            <h1>Funcionarios</h1>
+            <form method="POST" action="processaForm">
+                <div class="form-group">
+                    <label for="exampleInputText">Name</label>
+                    <input type="text" class="form-control" id="exampleInputText" aria-describedby="TextHelp" placeholder="Enter name">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputNumber">Cpf</label>
+                    <input type="number" class="form-control" id="exampleInputNumber" aria-describedby="numberHelp" placeholder="Enter Cpf">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword">Senha</label>
+                    <input type="password" class="form-control" id="exampleInputPassword" aria-describedby="passwordHelp" placeholder="Enter password">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputRole">Papel</label>
+                    <input type="number" class="form-control" id="exampleInputRole" aria-describedby="roleHelp" placeholder="Enter role">
+                </div>
+                <button type="button" class="btn btn-success">Enviar</button>
+            </form>
+        </div>
     </main>
     <script src="jquery-3.4.1.min.js"></script>
     <script src="js/popper.min.js"></script>
